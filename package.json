@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
@@ -18,7 +20,8 @@
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "wrangler": "4.104.0"
   },
   "packageManager": "pnpm@11.7.0"
 }

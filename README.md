@@ -11,16 +11,16 @@ pnpm dev
 
 Abra `http://localhost:3000`.
 
-## Publicar no Cloudflare Pages
+## Publicar no Cloudflare Workers
 
-O projeto usa exportação estática do Next.js. No Cloudflare Pages, configure:
+O projeto usa exportação estática do Next.js e Workers Static Assets. No painel do Cloudflare, configure:
 
-- Framework preset: `Next.js (Static HTML Export)`
 - Build command: `pnpm build`
-- Build output directory: `out`
+- Deploy command: `npx wrangler deploy`
+- Preview deploy command: `npx wrangler versions upload`
 - Production branch: `main`
 
-A pasta `out` é gerada automaticamente durante o build.
+A pasta `out` é gerada automaticamente durante o build e publicada pelo `wrangler.jsonc`.
 
 ## Configurar oferta
 
