@@ -20,7 +20,7 @@ import { FAQ } from "@/components/faq";
 
 const checkoutUrl =
   process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/BMrcbIe";
-const offerPrice = process.env.NEXT_PUBLIC_OFFER_PRICE || "37,00";
+const offerPrice = process.env.NEXT_PUBLIC_OFFER_PRICE || "47,90";
 const originalPrice = process.env.NEXT_PUBLIC_ORIGINAL_PRICE || "97,00";
 const guaranteeDays = process.env.NEXT_PUBLIC_GUARANTEE_DAYS || "7";
 
